@@ -16,11 +16,6 @@ end
 
 
 def printer(attendees)
-  binding.pry
-   # get returned values from batch_badge_creator 1 at a time 
-   # While we are on the first person of batch_badge_creator we will now call on 
-   # assign_rooms(attendees) and we will put out the first persons room
-   
    batch_badge_creator(attendees).each {|message| puts message }
    assign_rooms(attendees).each {|message| puts message }
 end 
